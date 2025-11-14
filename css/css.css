@@ -1,0 +1,238 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.row{
+    margin: 0px;
+}
+
+.prima{
+    flex-shrink: 0;
+    height: 100px;
+    background-color: #1B221D;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+.menu{
+    width: 60px;
+    height: 60px;
+}
+
+.ancore{
+    display: flex;
+}
+
+.menu-tendina{
+    display: none;
+}
+
+/* Items della navigazione */
+.nav-item {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #00ff00;
+    font-family: "Jersey 15";
+    font-size: 18px;
+    text-decoration: none;
+    margin: 8px;
+    padding: 8px;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    color: #E2B61A;
+}
+
+.nav-list {
+    list-style: none;
+    padding-left: 0;
+
+    display: flex;
+    justify-content: center;
+    /* justify-content: flex-start; */
+    align-items: center;
+}
+
+@media (max-width: 600px){
+    .ancore{
+        display: none;
+    }
+
+    .menu-tendina{
+        display:flex;
+    }
+
+    .prima{
+        height: 60px;
+    }
+
+    .logo{
+        width: 36px;
+        height: 36px;
+    }
+
+    .menu{
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.seconda{
+    height: 600px;
+    background-image: url(../imgs/sfondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.seconda h1{
+    color: #FFF;
+    font-family: "Jersey 10";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.seconda h3{
+    color: #FFC700;
+    font-family: "Jersey 15";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.nome{
+    display: inline;
+}
+
+.cognome{
+    display: inline;
+}
+
+.tutto{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .seconda{
+        height: 450px;
+    }
+
+    .seconda h1{
+        font-size: 96px;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    
+    .seconda h3{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 790px){
+    .nome{
+        display: none !important;
+    }
+
+    .cognome{
+        display: none !important;
+    }
+
+    .tutto{
+        display: block;
+    }
+}
+
+.continuo{
+    display: inline;
+}
+
+.introduzione-matteo{
+    padding: 0px;
+}
+
+.foto-matteo{
+    padding: 0px;
+}
+
+@media (max-width: 1024px){
+    .continuo{
+        display: none;
+    }
+}
+
+.terza{
+    flex-shrink: 0;
+    background-color: #1B221D;
+    padding: 40px;
+}
+
+h4{
+    color: #0F0;
+    font-family: "Jersey 15";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 27px;
+}
+
+.terza p{
+    color: #FFF;
+    font-family: "Jersey 25";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 100% */
+}
+
+@media (max-width: 767px){
+    .terza{
+        padding: 20px;
+    }
+
+    .foto-matteo{
+        padding-top: 20px;
+    }
+
+    h4{
+        padding-bottom: 20px;
+    }
+}
+
+.quarta{
+    flex-shrink: 0;
+    padding: 40px;
+    background: #0F0;
+}
+
+.quarta img{
+    padding: 0px;
+}
+
+@media (max-width: 767px){
+    .quarta{
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+
+    .quarta img{
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+}
